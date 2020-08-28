@@ -2,7 +2,7 @@ const sgMail = require('@sendgrid/mail');
 
 function SendEmail(To, Subject, Message) {
 
-    sgMail.setApiKey('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');
+    sgMail.setApiKey(process.env.API_KEY);
 
     const msg = {
         from: "test@put-your-domain.com",
